@@ -55,7 +55,10 @@ main{
     width: 100vw;
     height: 100%;
     position: relative;
+    background: rgba(255, 0 , 0, 0.959);
 }
+
+
 
 .content {
     position: absolute;
@@ -109,11 +112,12 @@ main{
 
 #slide-navegation-container {
     width: 100vw;
-    justify-content: center;
     display: flex;
+    justify-content: center;
     gap: 15px;
     position: fixed;
     bottom: 40px;
+    transform: translateY(30px);
 }
 
 .slide-navegation {
@@ -132,7 +136,7 @@ main{
 
 #icons {
     position: absolute;
-    top: 380px;
+    top: 40%;
     right: 15px;
 }
 
