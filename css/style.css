@@ -116,8 +116,7 @@ main{
     justify-content: center;
     gap: 15px;
     position: fixed;
-    bottom: 40px;
-    transform: translateY(30px);
+    bottom: 20px;
 }
 
 .slide-navegation {
