@@ -87,7 +87,6 @@
 @media (max-height:720px) {
     #slide-navegation-container {
         position: absolute;
-        bottom: 40px;
         gap: 20px;
     }
 
@@ -96,6 +95,20 @@
         padding: 14px 0px;
         font-size: 18px;
         font-weight: 500;
+    }
+
+    .content {
+        gap: 35px;
+    }
+
+    @keyframes gap {
+        0%{
+            gap: 10px;
+        }
+    
+        100% {
+            gap: 35px;
+        }
     }
 }
 
