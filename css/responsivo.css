@@ -115,7 +115,7 @@
 
 @media (max-height:720px) {
     #slide-navegation-container {
-        position: absolute;
+       position: absolute;
         gap: 20px;
         bottom: 50px;
     }
