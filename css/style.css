@@ -46,9 +46,31 @@ header nav ul li a {
     text-decoration: none;
 }
 
-header ul li a:hover {
-    border-bottom: 3px solid red;
-    
+li a::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    transition: 0.3s ease;
+    display: none;
+}
+
+header ul li a:hover::after {
+    animation: afterLine 0.5s forwards;
+    display: block;
+}
+
+
+@keyframes afterLine {
+    0%{
+        width: 0%;
+        background-color: #fff;
+    }
+
+    100%{
+        width: 100%;
+        background-color: red;
+    }
 }
 
 main{
@@ -62,12 +84,9 @@ main{
     display: none;
 }
 
-
 .content-activated {
     display: block;
 }
-
-
 
 .content {
     position: absolute;
@@ -108,8 +127,6 @@ main{
     font-weight: 500;
 }
 
-
-
 .content button {
     width: 200px;
     padding: 14px 0px;
@@ -121,8 +138,6 @@ main{
     font-weight: 400;
 }
 
-
-
 #slide-navegation-container {
     width: 100vw;
     display: flex;
@@ -131,7 +146,6 @@ main{
     position: fixed;
     bottom: 100px;
 }
-
 
 .slide-navegation {
     width: 12px;

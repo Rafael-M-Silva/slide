@@ -118,7 +118,8 @@
        position: absolute;
         gap: 20px;
         bottom: 50px;
-    }
+    }   
+}
 
     .content button {
         width: 170px;
